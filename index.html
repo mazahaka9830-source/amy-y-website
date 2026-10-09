@@ -3,138 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amy Y. | Chief Technical Advisor</title>
+    <title>Amy Yang | Chief Technical Advisor @ EdgeConNex</title>
+    <!-- 引入 Tailwind CSS 打造国际化社论级排版 -->
+    <script src="https://tailwindcss.com"></script>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #ffffff;
-            color: #000000;
-            line-height: 1.6;
-            padding: 8vw 10vw;
-        }
-        header {
-            margin-bottom: 8rem;
-        }
-        h1 {
-            font-size: 4.5rem;
-            font-weight: 800;
-            letter-spacing: -0.03em;
-            line-height: 1.1;
-            margin-bottom: 1.5rem;
-        }
-        .subtitle {
-            font-size: 1.5rem;
-            color: #666666;
-            font-weight: 400;
-        }
-        section {
-            margin-bottom: 6rem;
-            max-width: 800px;
-        }
-        .section-num {
-            font-size: 0.9rem;
-            font-weight: 700;
-            letter-spacing: 0.1em;
-            margin-bottom: 1.5rem;
-            color: #000000;
-        }
-        .section-title {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 2rem;
-            letter-spacing: -0.02em;
-        }
-        p {
-            font-size: 1.25rem;
-            color: #222222;
-            margin-bottom: 1.5rem;
-        }
-        ul {
-            list-style: none;
-        }
-        li {
-            font-size: 1.25rem;
-            margin-bottom: 1rem;
-            position: relative;
-            padding-left: 1.5rem;
-        }
-        li::before {
-            content: "—";
-            position: absolute;
-            left: 0;
-            color: #999999;
-        }
-        .edu-item {
-            margin-bottom: 1.5rem;
-        }
-        .edu-school {
-            font-weight: 700;
-            font-size: 1.25rem;
-        }
-        .edu-meta {
-            color: #666666;
-            font-size: 1.1rem;
-        }
-        footer {
-            margin-top: 10rem;
-            border-top: 1px solid #eeeeee;
-            padding-top: 2rem;
-            font-size: 1rem;
-            color: #888888;
-        }
-        a {
-            color: #000000;
-            text-decoration: underline;
-        }
-        a:hover {
-            color: #666666;
-        }
-        @media (max-width: 768px) {
-            body { padding: 3rem 1.5rem; }
-            h1 { font-size: 2.8rem; }
-            .subtitle { font-size: 1.2rem; }
+        html { scroll-behavior: smooth; }
+        body { background-color: #ffffff; color: #1e293b; }
+        .bio-text p {
+            line-height: 1.8;
+            margin-bottom: 1.75rem;
+            color: #334155;
+            font-size: 1.05rem;
+            text-align: justify;
         }
     </style>
 </head>
-<body>
+<body class="font-sans antialiased">
 
-    <header>
-        <h1>Amy (杨心怡) Y.</h1>
-        <div class="subtitle">Chief Technical Advisor @ EdgeConNex</div>
+    <!-- 01 顶级暗色高管巨幕首屏 (Hero Section) -->
+    <header class="relative bg-[#0f172a] text-white min-h-[50vh] md:min-h-[60vh] flex items-center overflow-hidden px-6 md:px-20 py-16">
+        
+        <!-- 右侧半贴脸视觉巨幕 - 对应你上传的真实大图 avatar.jpg -->
+        <div class="absolute right-0 top-0 bottom-0 w-full md:w-1/2 h-full opacity-20 md:opacity-100 bg-cover bg-center md:bg-right no-repeat z-0" 
+             style="background-image: url('./avatar.jpg');">
+        </div>
+        
+        <!-- 黑色左侧渐变遮罩，确保文字在任何屏幕下都绝对清晰锐利 -->
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/70 to-transparent z-10 pointer-events-none"></div>
+
+        <!-- 文本与领英社交按钮 -->
+        <div class="relative z-20 max-w-2xl mt-4">
+            <p class="text-xs uppercase tracking-widest text-sky-400 font-bold mb-3">EXECUTIVE TEAM</p>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">Amy (杨心怡) Yang</h1>
+            <p class="text-lg md:text-xl text-gray-300 font-light mb-8">
+                Chief Technical Advisor at EdgeConNex | Digital Infrastructure & Technology Strategy Expert
+            </p>
+            
+            <!-- 专属领英外链按钮（已移除X，锁定你的真实主页） -->
+            <div class="flex space-x-6 items-center">
+                <a href="https://linkedin.com" target="_blank" class="text-gray-400 hover:text-white transition duration-300 flex items-center gap-2 group" title="Connect on LinkedIn">
+                    <svg class="h-6 w-6 fill-current text-white group-hover:text-sky-400 transition" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                    <span class="text-xs tracking-widest text-gray-400 group-hover:text-white transition uppercase font-semibold">LinkedIn Profile ↗</span>
+                </a>
+            </div>
+        </div>
     </header>
 
-    <section id="about">
-        <div class="section-num">01 ABOUT</div>
-        <p>I've spent my career in critical infrastructure data center operations and the technology decisions that keep them running. Specialized in navigating the intersection of scale, efficiency, and emerging technological demands.</p>
-    </section>
+    <!-- 02 主体履历内容区 (Main Content) -->
+    <main class="max-w-4xl mx-auto px-6 md:px-8 py-20">
+        
+        <h2 class="text-3xl font-bold text-slate-900 mb-10 border-b border-slate-100 pb-4 tracking-tight">About Amy Yang</h2>
+        
+        <div class="bio-text">
+            
+            <!-- 核心简介 -->
+            <p>
+                Amy Yang currently serves as Chief Technical Advisor at EdgeConNex, specializing in global digital infrastructure, hyperscale data centers, AI computing environments, and critical infrastructure technology strategy. With extensive professional experience in technology consulting, data center operations, data engineering, and IT strategy, she is committed to bridging advanced technologies with real-world business needs, providing technical insights and strategic guidance to support the development of next-generation digital infrastructure.
+            </p>
 
-    <section id="expertise">
-        <div class="section-num">02 EXPERTISE</div>
-        <div class="section-title">Core Focus Areas</div>
-        <ul>
-            <li>Data Center Infrastructure Planning (Power, Cooling, Network)</li>
-            <li>Emerging Technologies Deployment (Liquid Cooling, High-Density Racks, AI Infrastructure)</li>
-            <li>Client & Partnership Engagement (TCO Optimization, Technical Due Diligence)</li>
-            <li>Technology Strategy & Infrastructure Evolution</li>
-        </ul>
-    </section>
+            <!-- 现任职位细则 -->
+            <p>
+                Since assuming her role as Chief Technical Advisor at EdgeConNex in February 2023, Amy has been involved in the planning and evaluation of data center technology strategies, with a particular focus on power systems, cooling technologies, network architecture, and high-density computing infrastructure. She closely follows emerging technologies, including liquid cooling, cold-plate cooling, immersion cooling, and edge computing. She advises clients and joint venture partners throughout the data center planning process, from evaluating technical solutions to supporting commercial contract negotiations. Her work emphasizes critical infrastructure reliability, compliance with industry standards, operational efficiency, and total cost of ownership (TCO) optimization, with the goal of balancing technological advancement and long-term business value.
+            </p>
 
-    <section id="education">
-        <div class="section-num">03 EDUCATION</div>
-        <div class="edu-item">
-            <div class="edu-school">The Johns Hopkins University</div>
-            <div class="edu-meta">Computer Science (Minor in Economics)</div>
-        </div>
-    </section>
+            <!-- 完美复刻：金句引用版块 (Callout Quote) -->
+            <div class="my-12 border-l-4 border-sky-500 bg-slate-50 p-6 rounded-r shadow-sm">
+                <blockquote class="text-lg md:text-xl font-semibold text-slate-800 italic leading-relaxed">
+                    "Exceptional digital infrastructure requires more than cutting-edge technology. It demands reliable engineering practices, long-term strategic vision, and the ability to turn innovation into meaningful, real-world value."
+                </blockquote>
+                <cite class="block text-sm text-sky-600 mt-3 not-italic font-bold tracking-wide uppercase">— Amy Yang</cite>
+            </div>
 
-    <footer>
-        <p>Connect via <a href="https://www.linkedin.com/in/amy-yang-tech/" target="_blank">LinkedIn</a></p>
-    </footer>
+            <!-- 过往经历二：运营经理 -->
+            <p>
+                Before becoming Chief Technical Advisor, Amy served as Data Center Operations Manager at EdgeConNex from February 2020 to January 2023, overseeing the day-to-day operations and management of critical data center facilities. In this role, she focused on maintaining continuous and reliable data center operations, meeting customer service-level agreements (SLAs), and supporting the high-availability infrastructure requirements of cloud computing and content service customers. This experience strengthened her expertise in critical facilities management, business continuity, operational risk management, and customer service, providing a strong foundation for her subsequent work in technology strategy consulting.
+            </p>
 
-</body>
-</html>
+            <!-- 过往经历三：硅谷数据工程师 -->
+            <p>
+                Prior to joining EdgeConNex, Amy worked as a Data Engineer at Elastic in the San Francisco Bay Area from February 2018 to May 2019. She contributed to enterprise IT development, data systems planning, and technology implementation, helping formulate IT solutions aligned with business requirements while supporting the development, operation, and optimization of enterprise systems. Her responsibilities encompassed IT risk management, information security, data technology applications, and cross-functional technical collaboration. Through this work, she helped improve system reliability, operational efficiency, and technology management capabilities.
+            </p>
+
+            <!-- 过往经历四：深圳数据顾问 -->
+            <p>
+                From November 2015 to May 2017, Amy served as a Data Consultant at SequoiaDB Ltd. in Shenzhen, China, providing enterprise clients with data analysis, technical solution design, and implementation consulting services. Working closely with client engineering teams, she helped identify complex data management challenges and develop practical solutions that translated data technologies into measurable business value. This experience further strengthened her understanding of enterprise databases, data architecture, and digital transformation.
+            </p>
+
+            <!-- 学术背书模块 (Education Highlight Card) -->
+            <div class="my-12 bg-slate-50 border border-slate-200 p-8 rounded-lg">
+                <h3 class="text-xs font-bold tracking-widest text-amber-700 uppercase mb-4">Academic Foundation</h3>
+                <div class="text-xl font-bold text-slate-900 mb-1">The Johns Hopkins University</div>
+                <div class="text-sm font-semibold text-slate-500 mb-4">Master of Science in Computer Science (Sept 2011 — May 2013)</div>
+                <p class="text-sm text-slate-600 leading-relaxed !mb-0">
+                    Her academic background encompasses data structures, numerical algorithms, operating systems, information security, artificial intelligence, data science, and software engineering, complemented by coursework in economics. Her strong foundation in computer science and interdisciplinary studies enables her to approach complex digital infrastructure challenges from both technical and business perspectives.
+                </p>
+            </div>
+
+            <!-- 技术栈与权威认证 (Skills & Certifications) -->
+            <div class="grid md:grid-cols-2 gap-6 my-12 border-t border-b border-slate-100 py-8">
+                <div>
+                    <h4 class="text-xs font-bold tracking-widest text-slate-400 uppercase mb-3">Technical Expertise</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-100 text-slate-800 text-xs px-3 py-1 font-medium rounded">Python</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs px-3 py-1 font-medium rounded">Java</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs px-3 py-1 font-medium rounded">C++</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs px-3 py-1 font-medium rounded">SQL</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs px-3 py-1 font-medium rounded">Machine Learning & AI</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs px-3 py-1 font-medium rounded">Database Architecture</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold tracking-widest text-slate-400 uppercase mb-3">Professional Credentials</h4>
+                    <ul class="text-sm text-slate-600 space-y-1 font-medium">
