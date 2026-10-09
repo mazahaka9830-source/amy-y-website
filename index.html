@@ -1,122 +1,123 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amy (杨心怡) Yang - Chief Technical Advisor | EdgeConneX</title>
-    <!-- 引入极简高级感字体与 Tailwind CSS 样式库 -->
-    <script src="https://tailwindcss.com"></script>
+    <title>Amy Yang - Chief Technical Advisor | EdgeConneX</title>
+    <!-- 引入最稳定的标准 Tailwind CSS 样式库链接，直接解决排版错乱问题 -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <!-- 引入高级现代无衬线字体 -->
     <link href="https://googleapis.com" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 antialiased selection:bg-blue-100 selection:text-blue-900">
+<body class="bg-gray-50 text-gray-900 antialiased">
 
-    <!-- 1. 顶部领袖首屏 (Header & Banner) -->
-    <header class="w-full bg-[#111827] text-white overflow-hidden shadow-xl">
+    <!-- 1. EXECUTIVE BANNER (顶部高管风黑底首屏) -->
+    <header class="w-full bg-gray-900 text-white overflow-hidden shadow-xl">
         <div class="max-w-6xl mx-auto px-6 py-12 md:py-20 flex flex-col md:flex-row items-center justify-between gap-12">
             <div class="max-w-xl space-y-4">
-                <span class="text-xs uppercase tracking-widest text-blue-400 font-semibold block">EXECUTIVE TEAM</span>
-                <h1 class="text-4xl md:text-5xl font-bold tracking-tight">Amy (杨心怡) Yang</h1>
+                <span class="text-xs uppercase tracking-widest text-blue-400 font-semibold block">EXECUTIVE PROFILE</span>
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight">Amy Yang</h1>
                 <p class="text-xl text-gray-300 font-light">Chief Technical Advisor | EdgeConneX</p>
                 <p class="text-sm text-gray-400">Digital Infrastructure and Data Center Technology Strategy Expert</p>
-                <!-- 社交媒体占位 -->
-                <div class="flex gap-4 pt-4 text-sm text-gray-400">
-                    <a href="#" class="hover:text-blue-400 transition">LinkedIn ↗</a>
-                    <a href="#" class="hover:text-blue-400 transition">Contact ↗</a>
+                
+                <div class="flex gap-6 pt-4 text-sm text-gray-400">
+                    <a href="#" class="hover:text-blue-400 transition font-medium">LinkedIn ↗</a>
+                    <a href="#" class="hover:text-blue-400 transition font-medium">Contact ↗</a>
                 </div>
             </div>
-            <!-- 右侧封面照展示区域 -->
-            <div class="w-full md:w-[450px] shrink-0 rounded-lg overflow-hidden border border-gray-800 shadow-2xl">
-                <!-- 部署后只需把电脑上的图片在GitHub中替换掉名为 avatar.png 的文件即可 -->
+            <!-- 右侧高清封面照区域 -->
+            <div class="w-full md:w-[400px] shrink-0 rounded-lg overflow-hidden border border-gray-800 shadow-2xl">
+                <!-- 确保您在 GitHub 根目录上传了一张名为 avatar.png 的照片 -->
                 <img src="avatar.png" alt="Amy Yang" class="w-full h-auto object-cover">
             </div>
         </div>
     </header>
 
-    <!-- 主体内容区域 (大留白、克制排版) -->
+    <!-- MAIN BRIEFCASE (大留白、克制排版的主体内容) -->
     <main class="max-w-4xl mx-auto px-6 py-16 md:py-24 space-y-20">
 
-        <!-- 2. 个人核心简介 (About Bio) -->
+        <!-- 2. PROFESSIONAL OVERVIEW -->
         <section class="space-y-6">
             <h2 class="text-xs uppercase tracking-widest text-gray-400 font-bold">ABOUT AMY</h2>
             <div class="text-gray-700 text-lg leading-relaxed space-y-6 font-light">
                 <p>
-                    <strong>Amy Yang</strong> 目前担任 <strong>EdgeConneX 首席技术顾问</strong>，专注于全球数字基础设施、超大规模数据中心、AI计算环境以及关键基础设施的技术战略规划。她在技术咨询、数据中心运营、数据工程及 IT 战略方面拥有深厚的专业背景，致力于将前沿技术与真实商业需求完美衔接。
+                    <strong>Amy Yang</strong> currently serves as <strong>Chief Technical Advisor at EdgeConneX</strong>, specializing in global digital infrastructure, hyperscale data centers, AI computing environments, and critical infrastructure technology strategy. With extensive professional experience in technology consulting, data center operations, data engineering, and IT strategy, she is committed to bridging advanced technologies with real-world business needs, providing technical insights and strategic guidance to support the development of next-generation digital infrastructure.
                 </p>
                 <p>
-                    自 2023 年 2 月履新以来，Amy 全面深度参与了数据中心动力系统、先进冷却技术（包括液冷、冷板式与浸没式冷却）以及高密度计算架构的评估与演进。她不仅为全球客户及合资伙伴提供精准的技术解法方案，更在全周期的商业合同谈判、总拥有成本（TCO）优化以及供应链合规性上提供强有力的战略导引。
+                    Since assuming her role as Chief Technical Advisor at EdgeConneX in February 2023, Amy has been involved in the planning and evaluation of data center technology strategies, with a particular focus on power systems, cooling technologies, network architecture, and high-density computing infrastructure. She closely follows emerging technologies, including liquid cooling, cold-plate cooling, immersion cooling, and edge computing.
                 </p>
             </div>
         </section>
 
-        <!-- 3. 管理理念金句 (Executive Quote) -->
-        <section class="py-8 px-8 border-l-4 border-black bg-gray-100 rounded-r-lg">
+        <!-- 3. STRATEGIC VISION QUOTE -->
+        <section class="py-8 px-8 border-l-4 border-gray-900 bg-gray-100 rounded-r-lg">
             <blockquote class="text-xl italic font-medium text-gray-800 leading-relaxed">
                 "Exceptional digital infrastructure requires more than cutting-edge technology. It demands reliable engineering practices, long-term strategic vision, and the ability to turn innovation into meaningful, real-world value."
             </blockquote>
             <cite class="block mt-3 text-sm text-gray-500 font-medium">— Amy Yang, Chief Technical Advisor</cite>
         </section>
 
-        <!-- 4. 职业生涯履历时间线 (Experience Timeline) -->
+        <!-- 4. EXPERIENCE TIMELINE -->
         <section class="space-y-8">
             <h2 class="text-xs uppercase tracking-widest text-gray-400 font-bold">PROFESSIONAL EXPERIENCE</h2>
             <div class="border-l-2 border-gray-200 pl-6 space-y-10 ml-2">
-                <!-- 职位 1 -->
+                <!-- Position 1 -->
                 <div class="relative">
-                    <div class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-black border-4 border-white ring-1 ring-black"></div>
-                    <span class="text-sm font-semibold text-blue-600">2023.02 - PRESENT</span>
+                    <div class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-gray-900 border-4 border-white ring-1 ring-gray-900"></div>
+                    <span class="text-sm font-semibold text-blue-600">FEB 2023 - PRESENT</span>
                     <h3 class="text-xl font-bold text-gray-900 mt-1">Chief Technical Advisor</h3>
                     <p class="text-gray-600 text-sm font-medium">EdgeConneX</p>
-                    <p class="text-gray-600 mt-2 font-light">负责超大规模AI计算基础设施、高密度算力环境及先进冷却方案（液冷等）的全球技术战略与合规谈判，深度优化关键设施的 TCO 与商业价值。</p>
+                    <p class="text-gray-600 mt-2 font-light">Advises clients and joint venture partners throughout the data center planning process, from evaluating technical solutions to supporting commercial contract negotiations. Emphasizes critical infrastructure reliability, compliance with industry standards, operational efficiency, and total cost of ownership (TCO) optimization.</p>
                 </div>
-                <!-- 职位 2 -->
+                <!-- Position 2 -->
                 <div class="relative">
                     <div class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-gray-300 border-4 border-white"></div>
-                    <span class="text-sm font-semibold text-gray-500">2020.02 - 2023.01</span>
+                    <span class="text-sm font-semibold text-gray-500">FEB 2020 - JAN 2023</span>
                     <h3 class="text-xl font-bold text-gray-900 mt-1">Data Center Operations Manager</h3>
                     <p class="text-gray-600 text-sm font-medium">EdgeConneX</p>
-                    <p class="text-gray-600 mt-2 font-light">全面操盘关键数据中心设施的日常运维与风险控制，严苛执行客户服务等级协议（SLA），为顶级云服务商提供高可用性物理基础设施保障。</p>
+                    <p class="text-gray-600 mt-2 font-light">Overseeing the day-to-day operations and management of critical data center facilities. Focused on maintaining continuous and reliable data center operations, meeting customer service-level agreements (SLAs), and supporting the high-availability infrastructure requirements.</p>
                 </div>
-                <!-- 职位 3 -->
+                <!-- Position 3 -->
                 <div class="relative">
                     <div class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-gray-300 border-4 border-white"></div>
-                    <span class="text-sm font-semibold text-gray-500">2018.02 - 2019.05</span>
+                    <span class="text-sm font-semibold text-gray-500">FEB 2018 - MAY 2019</span>
                     <h3 class="text-xl font-bold text-gray-900 mt-1">Data Engineer</h3>
                     <p class="text-gray-600 text-sm font-medium">Elastic | San Francisco Bay Area</p>
-                    <p class="text-gray-600 mt-2 font-light">赋能企业级 IT 架构演进与数据系统治理，主导企业跨功能技术协作、数据技术应用实施与全方位系统风险管控。</p>
+                    <p class="text-gray-600 mt-2 font-light">Contributed to enterprise IT development, data systems planning, and technology implementation. Responsibilities encompassed IT risk management, information security, data technology applications, and cross-functional technical collaboration.</p>
                 </div>
             </div>
         </section>
 
-        <!-- 5. 荣誉与奖项 (Awards & Recognition) -->
+        <!-- 5. HONORS & AWARDS -->
         <section class="space-y-6">
-            <h2 class="text-xs uppercase tracking-widest text-gray-400 font-bold">RECENT AWARDS & ACCOLADES</h2>
+            <h2 class="text-xs uppercase tracking-widest text-gray-400 font-bold">HONORS & RECOGNITION</h2>
             <ul class="space-y-4">
                 <li class="flex items-start gap-4 p-4 border border-gray-200 rounded-lg bg-white shadow-sm">
                     <span class="text-xl">🏆</span>
                     <div>
-                        <h4 class="font-bold text-gray-900">2025 #TTCAWARDS 科技创新奖</h4>
-                        <p class="text-sm text-gray-500 mt-1">表彰其在超大规模数字基础设施架构优化、系统能效提升以及前沿技术咨询领域的杰出行业贡献。</p>
+                        <h4 class="font-bold text-gray-900">#TTCAWARDS Recognition (May 2025)</h4>
+                        <p class="text-sm text-gray-500 mt-1">Recognized for outstanding contributions to technology innovation, scalable infrastructure solution implementation, and systems optimization at EdgeConneX.</p>
                     </div>
                 </li>
             </ul>
         </section>
 
-        <!-- 6. 学术与技能 (Education & Expertise) -->
+        <!-- 6. ACADEMIC & TECHNICAL EXPERTISE -->
         <section class="grid grid-cols-1 md:grid-cols-2 gap-12 pt-6 border-t border-gray-200">
-            <!-- 教育经历 -->
+            <!-- Education -->
             <div class="space-y-4">
                 <h2 class="text-xs uppercase tracking-widest text-gray-400 font-bold">ACADEMIC BACKGROUND</h2>
                 <div>
                     <h3 class="font-bold text-gray-900 text-lg">The Johns Hopkins University</h3>
                     <p class="text-sm text-gray-600 font-medium">Master of Science in Computer Science</p>
-                    <p class="text-xs text-gray-400 mt-1">2011.09 - 2013.05</p>
-                    <p class="text-sm text-gray-500 mt-2 font-light">深度攻读数据科学、人工智能、信息安全、分布式操作系统以及跨学科经济学课程。</p>
+                    <p class="text-xs text-gray-400 mt-1">Sep 2011 - May 2013</p>
+                    <p class="text-sm text-gray-500 mt-2 font-light">Academic background encompasses data structures, numerical algorithms, operating systems, information security, artificial intelligence, and software engineering.</p>
                 </div>
             </div>
-            <!-- 核心能力 -->
+            <!-- Skills -->
             <div class="space-y-4">
                 <h2 class="text-xs uppercase tracking-widest text-gray-400 font-bold">TECHNICAL EXPERTISE</h2>
                 <div class="flex flex-wrap gap-2 text-xs font-medium">
@@ -129,20 +130,7 @@
             </div>
         </section>
 
-        <!-- 7. 社会责任 (Community Service) -->
+        <!-- 7. HUMANITARIAN SERVICE -->
         <section class="space-y-4">
             <h2 class="text-xs uppercase tracking-widest text-gray-400 font-bold">COMMUNITY & HUMANITARIAN INITIATIVES</h2>
             <p class="text-gray-600 text-sm font-light leading-relaxed">
-                自 2023 年 11 月起，Amy 作为<strong>美国红十字会洛杉矶地区灾害响应志愿者</strong>，长期在一线参与社区紧急救援与人道主义救助行动。自 2021 年起，她持续在多项社区公益事业中倾注力量，积极履行全球技术精英的社会责任。
-            </p>
-        </section>
-
-    </main>
-
-    <!-- 页脚 -->
-    <footer class="w-full bg-gray-900 text-gray-500 text-center text-xs py-8 border-t border-gray-800">
-        <p>© 2026 Amy Yang. All Rights Reserved. Powered by Netlify & GitHub.</p>
-    </footer>
-
-</body>
-</html>
